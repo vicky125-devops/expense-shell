@@ -7,7 +7,7 @@ check_root
 echo "please emter db password:"
 read -s mysql_root_password
 
-apt install docker.io -y &>>$LOGFILE
+apt install mysql-server -y &>>$LOGFILE
 #VALIDATE $? "Installing MySQL Server"
 
 #ystemctl enable mysql &>>$LOGFILE
